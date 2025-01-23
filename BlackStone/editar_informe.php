@@ -259,9 +259,9 @@ if (is_numeric($id_url)) {
                             <label class="col-sm-3 col-form-label"><?php echo lang("State");?></label> 
                             <div class="col-sm-8 col-8">
                               <select class="form-control" id="estado" style="color:white" name="estado">
-                                <option value="<?php echo $estado ?>"><?php echo lang($estado); ?></option>
-                                <option value="Terminado"><?php echo lang("Terminado"); ?></option>
-                                <option value="En proceso"><?php echo lang("En proceso"); ?></option>
+                                <option selected="selected" value="<?php echo $estado; ?>"><?php echo lang($estado); ?></option>
+                                <option value="Terminado"><?php echo lang("Finalized"); ?></option>
+                                <option value="En proceso"><?php echo lang("In process"); ?></option>
                               </select>
                             </div>
                             <label class="col-sm-1 col-1 col-form-label"><i class="mdi mdi-format-line-spacing fs-5"></i></label> 
